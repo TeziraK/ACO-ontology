@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/tezirawanyana/ontologies/aro"
-     xml:base="http://www.semanticweb.org/tezirawanyana/ontologies/aro"
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/aco#"
+     xml:base="http://www.semanticweb.org/ontologies/aco"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:aco="http://www.semanticweb.org/ontologies/aco"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -15,7 +16,8 @@
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/aco">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/ontologies/aco/1.0.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
         <dc:contributor>Alec Sculley</dc:contributor>
@@ -128,199 +130,199 @@
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#analysed -->
+    <!-- http://www.semanticweb.org/ontologies/aco#analysed -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#analysed">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#analysed">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon_detection"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Observations"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Phenomenon_detection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Observations"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#appraisedBy -->
+    <!-- http://www.semanticweb.org/ontologies/aco#appraisedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#appraisedBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#appraisedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Plausible_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_appraisal"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#conductedOn -->
+    <!-- http://www.semanticweb.org/ontologies/aco#conductedOn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#conductedOn">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#conductedOn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data_appraisal"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Appraisal_data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Data_appraisal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Appraisal_data"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#developsVia -->
+    <!-- http://www.semanticweb.org/ontologies/aco#developsVia -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#developsVia">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#developsVia">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Influencing_factors"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_development"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#explains -->
+    <!-- http://www.semanticweb.org/ontologies/aco#explains -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#explains">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Explanation"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#explains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Explanation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Phenomenon"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesPlausibleTheory -->
+    <!-- http://www.semanticweb.org/ontologies/aco#generatesPlausibleTheory -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesPlausibleTheory">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#generatesPlausibleTheory">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_development"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Plausible_theory"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesPotentialTheory -->
+    <!-- http://www.semanticweb.org/ontologies/aco#generatesPotentialTheory -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesPotentialTheory">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#generatesPotentialTheory">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Potential_theory"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_appraisal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Potential_theory"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesfactor -->
+    <!-- http://www.semanticweb.org/ontologies/aco#generatesfactor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesfactor">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#generatesfactor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_generation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Influencing_factors"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasContext -->
+    <!-- http://www.semanticweb.org/ontologies/aco#hasContext -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasContext">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Context"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#hasContext">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Phenomenon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Context"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasInfluenceOn -->
+    <!-- http://www.semanticweb.org/ontologies/aco#hasInfluenceOn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasInfluenceOn">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#hasInfluenceOn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influenced"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Variable"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Variable"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasInput -->
+    <!-- http://www.semanticweb.org/ontologies/aco#hasInput -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasInput">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#hasInput">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_generation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Phenomenon"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasState -->
+    <!-- http://www.semanticweb.org/ontologies/aco#hasState -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasState">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#hasState">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#hadMember"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#state"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Variable"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#state"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasSubProcess -->
+    <!-- http://www.semanticweb.org/ontologies/aco#hasSubProcess -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasSubProcess">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#hasSubProcess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_construction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_appraisal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_development"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_generation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasVariable -->
+    <!-- http://www.semanticweb.org/ontologies/aco#hasVariable -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasVariable">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#hasVariable">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#hadMember"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Bayesian_model"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Bayesian_model"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Variable"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#isPublishedin -->
+    <!-- http://www.semanticweb.org/ontologies/aco#isPublishedin -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#isPublishedin">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#isPublishedin">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#hadPrimarySource"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Strong_theory"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Strong_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Publication"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#progressedFrom -->
+    <!-- http://www.semanticweb.org/ontologies/aco#progressedFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#progressedFrom">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#progressedFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasRevisionOf"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Strong_theory"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Potential_theory"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Strong_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Potential_theory"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#representedAs -->
+    <!-- http://www.semanticweb.org/ontologies/aco#representedAs -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#representedAs">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Bayesian_model"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#representedAs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Plausible_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Bayesian_model"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#resultedFrom -->
+    <!-- http://www.semanticweb.org/ontologies/aco#resultedFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#resultedFrom">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#resultedFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon_detection"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Phenomenon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Phenomenon_detection"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#wasDetectedFrom -->
+    <!-- http://www.semanticweb.org/ontologies/aco#wasDetectedFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#wasDetectedFrom">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#wasDetectedFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Observations"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Phenomenon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Observations"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#was_developed_by -->
+    <!-- http://www.semanticweb.org/ontologies/aco#was_developed_by -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#was_developed_by">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#was_developed_by">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Bayesian_model"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Influencing_factors"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Bayesian_model"/>
     </owl:ObjectProperty>
     
 
@@ -564,49 +566,49 @@
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasConditionalProbabilityValue -->
+    <!-- http://www.semanticweb.org/ontologies/aco#hasConditionalProbabilityValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasConditionalProbabilityValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/aco#hasConditionalProbabilityValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#value"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#state"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#state"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasDOI -->
+    <!-- http://www.semanticweb.org/ontologies/aco#hasDOI -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasDOI">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/aco#hasDOI">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasPriorProbabilityValue -->
+    <!-- http://www.semanticweb.org/ontologies/aco#hasPriorProbabilityValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasPriorProbabilityValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/aco#hasPriorProbabilityValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#value"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#state"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#state"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasPublicationYear -->
+    <!-- http://www.semanticweb.org/ontologies/aco#hasPublicationYear -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasPublicationYear">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/aco#hasPublicationYear">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasURL -->
+    <!-- http://www.semanticweb.org/ontologies/aco#hasURL -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasURL">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/aco#hasURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -707,54 +709,54 @@
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Analogy_appraisal -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Analogy_appraisal -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Analogy_appraisal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Analogy_appraisal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_appraisal"/>
         <rdfs:comment>Analogy ensures that the theory is consistent with credible knowledge</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Appraisal_data -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Appraisal_data -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Appraisal_data">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Appraisal_data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Data"/>
         <rdfs:comment>Data applied in the appraisal process.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Bayesian_model -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Bayesian_model -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Bayesian_model">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Bayesian_model">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>An information artifact in the form of a causal model used to develop and represent theories</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Consilience_appraisal -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Consilience_appraisal -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Consilience_appraisal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Consilience_appraisal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_appraisal"/>
         <rdfs:comment>Consilience refers to the breadth of facts explained</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Context -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Context -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Context">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Context">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>The contex in which a phenomenon occurs represents the relevant aspect based on which the similarity of the said phenomenon with already explained situations is determined.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Data -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Data">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>Data are records/representations used as evidence in phenomenon detection.</rdfs:comment>
@@ -762,27 +764,27 @@
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data_appraisal -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Data_appraisal -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data_appraisal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Data_appraisal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_appraisal"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Explanation -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Explanation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Explanation">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Explanation">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/aco#Influencing_factors"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Hypothesis -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Hypothesis -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Hypothesis">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Hypothesis">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/aco#Plausible_theory"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>A  representational content proposed to explain patterns/phenomena.</rdfs:comment>
@@ -791,98 +793,98 @@
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Influencing_factors -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Influencing_factors">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Observations -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Observations -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Observations">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Observations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Data"/>
         <rdfs:comment>Data from which phenomena are detected.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Phenomenon -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Phenomenon">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>Robust recurrent features that become the objects of explanation.</rdfs:comment>
         <rdfs:comment>Phenomena are empirical regularities detected from data sets of raw sensor observations, often through machine learning techniques that researchers aim to explain.</rdfs:comment>
+        <rdfs:comment>Robust recurrent features that become the objects of explanation.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon_detection -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Phenomenon_detection -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon_detection">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Phenomenon_detection">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>Phenomenon detection is the process of identifying empirical regularities (phenomena) in data that researchers seek to explain.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Plausible_theory -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Plausible_theory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory"/>
         <rdfs:comment>A plausible theory is equivalent to a hypothesis that has been developed.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Potential_theory -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Potential_theory -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Potential_theory">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Potential_theory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory"/>
         <rdfs:comment>Potential theories are theories that have been appraised.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Publication -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Publication">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Researcher -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Researcher -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Researcher">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Researcher">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Simplicity_appraisal -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Simplicity_appraisal -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Simplicity_appraisal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Simplicity_appraisal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_appraisal"/>
         <rdfs:comment>Simplicity ensures that the theory makes minimal assumptions</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Strong_theory -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Strong_theory -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Strong_theory">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Strong_theory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory"/>
         <rdfs:comment>Strong theoriesare theories which have been validated by experts, and are supported by published articles.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Theory -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Theory">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>An information artifact that explains a phenomenon.</rdfs:comment>
@@ -890,55 +892,55 @@
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Theory_appraisal -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Theory_appraisal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_construction"/>
         <rdfs:comment>Evaluation of a theory  by explanatory coherence (consilience, simplicity and analogy) or on an appraisal data set.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Theory_construction -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Theory_construction">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>Theory construction involves the generation, development and appraisal of explanatory theories that can be applied in the explanation of detected phenomena</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Theory_development -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Theory_development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_construction"/>
         <rdfs:comment>The development of influencing factors into plausible theories by building causal models.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Theory_generation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Theory_generation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_construction"/>
         <rdfs:comment>The abductive step from phenomenon to hypothesis.</rdfs:comment>
         <rdfs:comment>Theory generation involves abductively generating candidate causal explanations for the phenomena by identifying the factors that influence the said phenomenon.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable -->
+    <!-- http://www.semanticweb.org/ontologies/aco#Variable -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Variable">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>Variables are nodes in the Bayesian model.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#state -->
+    <!-- http://www.semanticweb.org/ontologies/aco#state -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#state">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#state">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>States are instances of variables in the Bayesian model.</rdfs:comment>
     </owl:Class>
@@ -1158,15 +1160,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#ECHO_run -->
+    <!-- http://www.semanticweb.org/ontologies/aco#ECHO_run -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#ECHO_run"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/aco#ECHO_run"/>
     
 
 
-    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#TEC -->
+    <!-- http://www.semanticweb.org/ontologies/aco#TEC -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#TEC"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/aco#TEC"/>
     
 
 
@@ -1226,17 +1228,17 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Potential_theory"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Strong_theory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/aco#Plausible_theory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/aco#Potential_theory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/aco#Strong_theory"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/aco#Theory_appraisal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/aco#Theory_development"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/aco#Theory_generation"/>
         </owl:members>
     </rdf:Description>
     
