@@ -1,0 +1,1624 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tezirawanyana/ontologies/aro"
+     xml:base="http://www.semanticweb.org/tezirawanyana/ontologies/aro"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:sssom="https://w3id.org/sssom/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+        <dc:contributor>Alec Sculley</dc:contributor>
+        <dc:contributor>Austin Liebers</dc:contributor>
+        <dc:contributor>Giacomo De Colle</dc:contributor>
+        <dc:contributor>John Beverley</dc:contributor>
+        <dc:contributor>Peihong Karl Xie</dc:contributor>
+        <dc:contributor>Sydney Cohen</dc:contributor>
+        <dc:contributor>Tim Prudhomme</dc:contributor>
+        <dc:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <rdfs:label xml:lang="en">Basic Formal Ontology (BFO) ISO 21838-2:2020 mappings for W3C PROVenance Interchange Ontology (PROV-O)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://basic-formal-ontology.org/"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/BFO-Mappings/PROV-to-BFO"/>
+        <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/prov-o/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000121 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000121"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000171 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000171"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000178 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000196 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000196"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#analysed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#analysed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon_detection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Observations"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#appraisedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#appraisedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#conductedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#conductedOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data_appraisal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Appraisal_data"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#developsVia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#developsVia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#explains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#explains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Explanation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesPlausibleTheory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesPlausibleTheory">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesPotentialTheory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesPotentialTheory">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Potential_theory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesfactor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#generatesfactor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasContext">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Context"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasInfluenceOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasInfluenceOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influenced"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasInput">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#hadMember"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#state"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasSubProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasSubProcess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasVariable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasVariable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#hadMember"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Bayesian_model"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#isPublishedin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#isPublishedin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#hadPrimarySource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Strong_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#progressedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#progressedFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasRevisionOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Strong_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Potential_theory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#representedAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#representedAs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Bayesian_model"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#resultedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#resultedFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon_detection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#wasDetectedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#wasDetectedFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Observations"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#was_developed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#was_developed_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Bayesian_model"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#atLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#atLocation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#entity -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#entity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#generated"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:comment xml:lang="en">An activity is a process that may be generated by a prov:Entity as a participant.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadDictionaryMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadDictionaryMember">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#hadDictionaryMember"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+        <rdfs:comment xml:lang="en">A prov:Dictionary has a prov:Key-Entity Pair as a member, then it has it as a continuant part.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadGeneration -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadGeneration">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#hadGeneration"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+        <rdfs:comment xml:lang="en">A prov:Derivation that has generation some prov:Generation also has it as a temporal part.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadMember">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#hadMember"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+        <rdfs:comment xml:lang="en">A prov:Collection that has member some prov:Entity also has it as a continuant part.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadRole"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadUsage -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadUsage">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#hadUsage"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+        <rdfs:comment xml:lang="en">A prov:Derivation that had usage some prov:Usage has it as a temporal part.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#invalidated -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#invalidated">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#invalidated"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:comment xml:lang="en">A process has a (non spatial region) continuant as a participant. An activity is a process that may be invalidated by a prov:Entity as a participant.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedEnd -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedEnd">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#qualifiedEnd"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+        <rdfs:comment xml:lang="en">A prov:Activity whose qualified end is some prov:End has it as a temporal part.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedStart -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedStart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#qualifiedStart"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+        <rdfs:comment xml:lang="en">A prov:Activity whose qualified start is some prov:Start has it as a temporal part.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedUsage -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedUsage">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#qualifiedUsage"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+        <rdfs:comment xml:lang="en">A prov:Activity whose qualified usage is some prov:Usage has it as a temporal part.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#used"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:comment xml:lang="en">A process has a (non spatial region) continuant as a participant. An activity is a process that may use a prov:Entity as a participant.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:comment xml:lang="en">A process has a (non spatial region) continuant as a participant. An activity is a process that may be associated with a prov:Entity as a participant.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasEndedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasEndedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#wasEndedBy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:comment xml:lang="en">A process has a (non spatial region) continuant as a participant. An activity is a process that may be ended by a prov:Entity as a participant.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+        <rdfs:comment xml:lang="en">An entity (non-spatial region continuant) may participate in its generation by an activity (process)</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInvalidatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInvalidatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+        <rdfs:comment xml:lang="en">An entity (non-spatial region continuant) may participate in its invalidation by an activity (process)</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasStartedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasStartedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#wasStartedBy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:comment xml:lang="en">A process has a (non spatial region) continuant as a participant. An activity is a process that may be started by a prov:Entity as a participant.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasConditionalProbabilityValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasConditionalProbabilityValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#value"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#state"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasDOI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasDOI">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasPriorProbabilityValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasPriorProbabilityValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#value"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#state"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasPublicationYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasPublicationYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#hasURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment xml:lang="en">A prov:Activity is equivalent to a process because it happens over time, while not being a temporal region itself.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/prov#Location"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <rdfs:comment xml:lang="en">A prov:location is equivalent to a site because a prov:Location is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part), but adds specificity in that it can be an ISO 19112 geographic place or another location in which provenance occurs.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+        <rdfs:comment xml:lang="en">A prov:InstantaneousEvent is equivalent to a process boundary because it is referred to as the boundary (start or end) of a prov:Activity as an occurrent.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Analogy_appraisal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Analogy_appraisal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+        <rdfs:comment>Analogy ensures that the theory is consistent with credible knowledge</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Appraisal_data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Appraisal_data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data"/>
+        <rdfs:comment>Data applied in the appraisal process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Bayesian_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Bayesian_model">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>An information artifact in the form of a causal model used to develop and represent theories</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Consilience_appraisal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Consilience_appraisal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+        <rdfs:comment>Consilience refers to the breadth of facts explained</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Context">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>The contex in which a phenomenon occurs represents the relevant aspect based on which the similarity of the said phenomenon with already explained situations is determined.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>Data are records/representations used as evidence in phenomenon detection.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data_appraisal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data_appraisal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Explanation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Explanation">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Hypothesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Hypothesis">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>A  representational content proposed to explain patterns/phenomena.</rdfs:comment>
+        <rdfs:comment>A hypothesis is a theory that has not yet been rigorously tested and strongly supported.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Influencing_factors">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Observations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Observations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Data"/>
+        <rdfs:comment>Data from which phenomena are detected.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>Robust recurrent features that become the objects of explanation.</rdfs:comment>
+        <rdfs:comment>Phenomena are empirical regularities detected from data sets of raw sensor observations, often through machine learning techniques that researchers aim to explain.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon_detection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Phenomenon_detection">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment>Phenomenon detection is the process of identifying empirical regularities (phenomena) in data that researchers seek to explain.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory"/>
+        <rdfs:comment>A plausible theory is equivalent to a hypothesis that has been developed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Potential_theory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Potential_theory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory"/>
+        <rdfs:comment>Potential theories are theories that have been appraised.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Publication">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Researcher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Researcher">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Simplicity_appraisal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Simplicity_appraisal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+        <rdfs:comment>Simplicity ensures that the theory makes minimal assumptions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Strong_theory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Strong_theory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory"/>
+        <rdfs:comment>Strong theoriesare theories which have been validated by experts, and are supported by published articles.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>An information artifact that explains a phenomenon.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction"/>
+        <rdfs:comment>Evaluation of a theory  by explanatory coherence (consilience, simplicity and analogy) or on an appraisal data set.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment>Theory construction involves the generation, development and appraisal of explanatory theories that can be applied in the explanation of detected phenomena</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction"/>
+        <rdfs:comment>The development of influencing factors into plausible theories by building causal models.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_construction"/>
+        <rdfs:comment>The abductive step from phenomenon to hypothesis.</rdfs:comment>
+        <rdfs:comment>Theory generation involves abductively generating candidate causal explanations for the phenomena by identifying the factors that influence the said phenomenon.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Variable">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>Variables are nodes in the Bayesian model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#state -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#state">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>States are instances of variables in the Bayesian model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:subClassOf rdf:nodeID="genid19"/>
+    </owl:Class>
+    <owl:Class rdf:nodeID="genid19">
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid19"/>
+        <rdfs:comment xml:lang="en">A prov:Agent is a material entity because always has some matter as a part that persists in time. A prov:Agent participates in (at some time) some prov:Activity and bears a role, that, if realized, is realized in a prov:Activity taking place. This axiomatizes the definition of agent as &apos;something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent&apos;s activity&apos;. According to Requirement VI13 in &apos;Rationale of Prov&apos;, this could be a prov:Entity. A prov:SoftwareAgent is a material entity because it is defined as &apos;running software&apos;, meaning a particular, material carrier of software, as opposed to, for example, its source code. A prov:SoftwareAgent is a particular instance of sofware running on a particular computer.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Bundle -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Bundle">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#Bundle"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:comment xml:lang="en">A prov:Bundle exists in virtue of the fact that there is at least one of what may be multiple copies; it is the content or the pattern that the multiple copies share.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Dictionary -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Dictionary">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#Dictionary"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:comment xml:lang="en">A prov:Dictionary exists in virtue of the fact that there is at least one of what may be multiple copies; it is the content or the pattern that the multiple copies share.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#DictionaryInvolvement -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#DictionaryInvolvement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#DictionaryInvolvement"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:comment xml:lang="en">prov:DictionaryInvolvement is undefined and only used in two canonical examples from PROV-Dictionary. Nevertheless, the example instances of prov:DictionaryInvolvement are instances of prov:Removal, which is an occurrent, which suggests that prov:DictionaryInvolvement should also be an occurrent.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdfs:subClassOf rdf:nodeID="genid33"/>
+    </owl:Class>
+    <owl:Class rdf:nodeID="genid33">
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:unionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid33"/>
+        <rdfs:comment xml:lang="en">A prov:Entity is a continuant because it entirely exists at different times. However, a prov:Entity is not a spatial region because spatial regions are causally inert and may not particpate in processes.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Influence -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Influence">
+        <rdfs:subClassOf rdf:nodeID="genid42"/>
+    </owl:Class>
+    <owl:Class rdf:nodeID="genid42">
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035"/>
+                </owl:unionOf>
+            </owl:Class>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:intersectionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid42"/>
+        <rdfs:comment xml:lang="en">A prov:Influence is either a process or process boundary, but not both at once, because it occurs over time or at an instant in time. Although prov:Influence is defined as a capacity, all of its subclasses are clearly defined as occurring over time or at an instant. For example, a prov:Generation is a prov:InstantaneousEvent, while a prov:Derivation is a not a prov:InstantaneousEvent, yet both are subclasses of prov:Influence.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is not a disjoint union because while every Influence is either a process or process boundary, some processes &amp; process boundaries are not Influences.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#InstantaneousEvent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#KeyEntityPair -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#KeyEntityPair">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#KeyEntityPair"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:comment xml:lang="en">A prov:KeyEntityPair exists in virtue of the fact that there is at least one of what may be multiple copies; it is the content or the pattern that the multiple copies share.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Location -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Location"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Plan -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Plan">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:comment xml:lang="en">A prov:Plan exists in virtue of the fact that there is at least one of what may be multiple copies; it is the content or the pattern that the multiple copies share.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Role -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Role">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#Role"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:comment xml:lang="en">A prov:Role is a bfo:role because its externally determined by the context in which the bearer plays the role.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#ECHO_run -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#ECHO_run"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tezirawanyana/ontologies/aco#TEC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#TEC"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-Mappings/PROV-to-BFO/main/prov-bfo-directmappings.ttl -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/BFO-Mappings/PROV-to-BFO/main/prov-bfo-directmappings.ttl">
+        <prov:wasDerivedFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/bfo-core.ttl"/>
+        <prov:wasDerivedFrom rdf:resource="https://www.w3.org/ns/prov-o-20130430"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/bfo-core.ttl -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/bfo-core.ttl"/>
+    
+
+
+    <!-- https://www.w3.org/ns/prov-o-20130430 -->
+
+    <owl:NamedIndividual rdf:about="https://www.w3.org/ns/prov-o-20130430"/>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Plausible_theory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Potential_theory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Strong_theory"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_appraisal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_development"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tezirawanyana/ontologies/aco#Theory_generation"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>If a prov:Entity is at some location, then it is located in that location</rdfs:comment>
+        <rdfs:label>Entity atLocation -&gt; located in</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/ns/prov#atLocation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>If an InstantaneousEvent is at some location, then it occurs in that location</rdfs:comment>
+        <rdfs:label>InstantaneousEvent atLocation -&gt; occurs in</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/ns/prov#atLocation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>If something occurs in a Location, then it is located at that Location</rdfs:comment>
+        <rdfs:label>occurs in Location -&gt; atLocation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/ns/prov#Location"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/ns/prov#atLocation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>If something is located in a prov:Location, then it&apos;s located at that Location</rdfs:comment>
+        <rdfs:label>located in Location -&gt; atLocation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/ns/prov#Location"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/ns/prov#atLocation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>prov:entity is a relation between an entity and its influence reified as an instance of the class EntityInfluence. This mapping translates a subset of prov:entity relations in terms of continuants being participants in processes. If an EntityInfluence is a BFO process and is the EntityInfluence of an Entity, then that EntityInfluence has participant that Entity as the prov:influencer.</rdfs:comment>
+        <rdfs:label>EntityInfluence entity -&gt; has participant (at some time)</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/ns/prov#entity"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>If a process Influence had role some Role, then it had that Role as a participant</rdfs:comment>
+        <rdfs:label>hadRole -&gt; has participant</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/ns/prov#hadRole"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>If an Activity is at some location, then it occurs in that location</rdfs:comment>
+        <rdfs:label>Activity atLocation -&gt; occurs in</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/ns/prov#atLocation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>If a prov:Agent is at some location, then it is located in that location</rdfs:comment>
+        <rdfs:label>Agent atLocation -&gt; located in</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/ns/prov#atLocation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
