@@ -149,6 +149,46 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/aco#appraisedByAnalogy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#appraisedByAnalogy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/aco#appraisedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Plausible_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Analogy_appraisal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/aco#appraisedByConsilience -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#appraisedByConsilience">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/aco#appraisedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Plausible_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Consilience_appraisal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/aco#appraisedByData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#appraisedByData">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/aco#appraisedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Plausible_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Data_appraisal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/aco#appraisedBySimplicity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#appraisedBySimplicity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/aco#appraisedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Plausible_theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Simplicity_appraisal"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/aco#conductedOn -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#conductedOn">
@@ -264,6 +304,27 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#hadMember"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Bayesian_model"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/aco#isAcreditedto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#isAcreditedto">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/aco#isBasedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#isBasedOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Explanation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Strong_theory"/>
     </owl:ObjectProperty>
     
 
@@ -856,14 +917,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/aco#Researcher -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Researcher">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Person"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/aco#Simplicity_appraisal -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Simplicity_appraisal">
@@ -895,7 +948,7 @@
     <!-- http://www.semanticweb.org/ontologies/aco#Theory_appraisal -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Theory_appraisal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_construction"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>Evaluation of a theory  by explanatory coherence (consilience, simplicity and analogy) or on an appraisal data set.</rdfs:comment>
     </owl:Class>
     
@@ -913,7 +966,7 @@
     <!-- http://www.semanticweb.org/ontologies/aco#Theory_development -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Theory_development">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_construction"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>The development of influencing factors into plausible theories by building causal models.</rdfs:comment>
     </owl:Class>
     
@@ -922,7 +975,7 @@
     <!-- http://www.semanticweb.org/ontologies/aco#Theory_generation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Theory_generation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_construction"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>The abductive step from phenomenon to hypothesis.</rdfs:comment>
         <rdfs:comment>Theory generation involves abductively generating candidate causal explanations for the phenomena by identifying the factors that influence the said phenomenon.</rdfs:comment>
     </owl:Class>
