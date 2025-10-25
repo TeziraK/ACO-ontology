@@ -211,7 +211,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#developsVia">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Influencing_factors"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Risk_factors"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_development"/>
     </owl:ObjectProperty>
     
@@ -251,7 +251,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#generatesfactor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Theory_generation"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Influencing_factors"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Risk_factors"/>
     </owl:ObjectProperty>
     
 
@@ -422,7 +422,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/aco#was_developed_by">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Influencing_factors"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/aco#Risk_factors"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/aco#Bayesian_model"/>
     </owl:ObjectProperty>
     
@@ -893,7 +893,7 @@
     <!-- http://www.semanticweb.org/ontologies/aco#Explanation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Explanation">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/aco#Influencing_factors"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/aco#Risk_factors"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     </owl:Class>
     
@@ -907,14 +907,6 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>A  representational content proposed to explain patterns/phenomena.</rdfs:comment>
         <rdfs:comment>A hypothesis is a theory that has not yet been rigorously tested and strongly supported.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/aco#Influencing_factors -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Influencing_factors">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     </owl:Class>
     
 
@@ -977,6 +969,14 @@
     <!-- http://www.semanticweb.org/ontologies/aco#Publication -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Publication">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/aco#Risk_factors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/aco#Risk_factors">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     </owl:Class>
     
@@ -1348,7 +1348,7 @@
     <!-- http://www.semanticweb.org/ontologies/aco#Hypertension -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/aco#Hypertension">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/aco#Influencing_factors"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/aco#Risk_factors"/>
         <explains rdf:resource="http://www.semanticweb.org/ontologies/aco#Atrial_Fibrillation"/>
     </owl:NamedIndividual>
     
